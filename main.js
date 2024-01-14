@@ -51,3 +51,4 @@ function setGradient(){
     colorText.textContent = bgColor;
 }
 setGradient();
+
