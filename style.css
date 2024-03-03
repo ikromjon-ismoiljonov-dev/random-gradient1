@@ -20,7 +20,7 @@ body {
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
-.container{
+.container1{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -31,14 +31,14 @@ body {
     border-radius: 10px;
     margin-bottom: 25px;
 }
-.container:hover{
+.container1:hover{
     box-shadow: 1px 1px 34px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 1px 34px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 34px -4px rgba(0,0,0,0.75);
     transition: all 0.5s;
 
 }
-.container h1{
+.container1 h1{
     font-weight: 500;
 }
 
@@ -48,7 +48,10 @@ body {
 }
 
 @media (max-width:480px) {
-    .container h1{
+    .container1 h1{
         font-size: 22px;
     }
+}
+.color-text{
+    cursor: pointer;
 }

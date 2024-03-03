@@ -21,6 +21,17 @@ const values = [
     'f',
 ]
 
+
+function Copy(text){
+    var elem = document.createElement('textarea');
+    elem.value = text.innerText;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+    alert('copied   ')
+}
+
 // random color function
 
 function getGradient(){
@@ -51,4 +62,4 @@ function setGradient(){
     colorText.textContent = bgColor;
 }
 setGradient();
-
+    
