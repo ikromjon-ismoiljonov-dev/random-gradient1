@@ -21,15 +21,16 @@ const values = [
     'f',
 ]
 
+var btnColor = document.getElementById('btn-color');
 
 function Copy(text){
     var elem = document.createElement('textarea');
     elem.value = text.innerText;
+    btnColor.innerHTML = 'Copied !'
     document.body.appendChild(elem);
     elem.select();
     document.execCommand('copy');
     document.body.removeChild(elem);
-    alert('copied   ')
 }
 
 // random color function
@@ -48,7 +49,7 @@ function getGradient(){
 }
 
 function setGradient(){
-
+    btnColor.innerHTML = 'Copy to Code'
     const color1 = getGradient();
     const color2 = getGradient();
     const randomDeg = Math.trunc(Math.random() * 360);
